@@ -100,5 +100,11 @@ export const rules = {
     'Teaming up with members of other team/color to capture or hold the point is strictly prohibited.',
     'Manipulating the score is strictly prohibited. This includes farming, boosting, or intentionally feeding points to another player or section.',
     'AFK is not allowed during this event. You may be kicked from the server if you are inactive for an extended period of time.',
+  ],
+  conflict: [
+    'All conflicts between sections must have a valid and substantial reason. Avoid initiating unnecessary disputes or engagements that may lead to toxicity or disrupt the community.',
+    'Interaction is a must before engaging in any combat.',
+    'Returning to the area of conflict after respawning is strictly prohibited.',
+    'Always be mindful of your limits and respect the circumstances of others. Not everyone wishes to engage in prolonged conflicts, so exercise consideration and avoid unnecessarily escalating situations.',
   ]
 };

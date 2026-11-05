@@ -17,4 +17,5 @@ export const categories = [
   // { id: 'capture', kanji: '拠', title: 'Capture Point', group: 'Combat Rules', description: 'Holding and contesting the marked capture area.', icon: Target },
   // { id: 'concert', kanji: '楽', title: 'Concert', group: 'Combat Rules', description: 'Conduct during concerts and live performances.', icon: Music },
   { id: 'scorewar', kanji: '点', title: 'Score War and Concert', group: 'Combat Rules', description: 'Earning points fairly and how scores are decided.', icon: Trophy },
+  { id: 'conflict', kanji: '派', title: 'Conflicts', group: 'Combat Rules', description: 'Conflict between sections.', icon: Target },
 ];
