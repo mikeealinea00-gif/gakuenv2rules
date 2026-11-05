@@ -1,0 +1,7 @@
+@media (max-width: 900px) {
+  .handbook { grid-template-columns: 1fr; }
+}
+@media (max-width: 480px) {
+  .section { padding-block: var(--space-4); }
+  .hero__actions .btn { flex: 1 1 100%; }
+}

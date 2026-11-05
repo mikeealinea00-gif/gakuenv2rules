@@ -1,0 +1,23 @@
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: calc(var(--nav-h) + 24px); }
+body { margin: 0; font: 17px/1.65 var(--font-body); color: var(--color-text-primary); background: var(--color-background); overflow-x: hidden; transition: background-color 0.25s, color 0.25s; }
+h1, h2, h3 { font-family: var(--font-head); line-height: 1.2; margin: 0; }
+p { margin: 0; }
+a { color: inherit; }
+button { font: inherit; cursor: pointer; }
+:focus-visible { outline: 3px solid var(--color-focus); outline-offset: 2px; border-radius: 4px; }
+mark { background: var(--color-mark-bg); color: inherit; padding: 0 2px; border-radius: 3px; }
+
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem; min-height: 46px; padding: 0 22px; border-radius: 6px; border: 1.5px solid transparent; background: var(--color-accent); color: #fff; font: 700 16px var(--font-body); text-decoration: none; transition: background-color 0.2s, border-color 0.2s, transform 0.2s; }
+.btn:hover { background: var(--color-accent-hover); }
+.btn:active { transform: translateY(1px); }
+.btn--ghost { background: transparent; border-color: var(--gold); color: #fff; }
+.btn--ghost:hover { background: rgba(240, 107, 176, 0.18); }
+.btn--line { background: var(--color-surface); border-color: var(--color-border); color: var(--color-text-primary); }
+.btn--line:hover { background: var(--color-surface); border-color: var(--gold); }
+
+/* Subtle theme transitions: colors, backgrounds, borders and shadows only */
+.overview, .rule-section, .toc, .search__box, .result, .notice, .no-results {
+  transition: background-color 0.25s, color 0.25s, border-color 0.25s, box-shadow 0.25s;
+}
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { transition: none !important; } }

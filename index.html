@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/webp" href="/favicon.webp" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="./src/styles/fonts.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@600;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Official Rules and Regulations for Gakuen V2 Roleplay on FiveM." />
+    <title>Gakuen V2 Roleplay – Official Rules and Regulations</title>
+    <script>
+      // Applies the saved/OS theme before first paint to avoid a flash. Mirrors src/utils/themeStorage.js.
+      (function () {
+        var t = null;
+        try { t = localStorage.getItem('gakuen-theme'); } catch (e) {}
+        if (t !== 'light' && t !== 'dark') {
+          t = window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        }
+        document.documentElement.dataset.theme = t;
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

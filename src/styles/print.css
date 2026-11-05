@@ -1,0 +1,23 @@
+@media print {
+  .navbar, .hero, .overview, .toc, .toc-jump, .search, .back-to-top, .footer-art, .no-print { display: none !important; }
+  .search-results { display: none !important; }
+  .rules-all { display: block !important; }
+  body { background: #fff; color: #000; }
+  .rule-section { break-inside: avoid; box-shadow: none !important; border: 1px solid #999 !important; margin-bottom: 12pt; }
+  .handbook { display: block; }
+  .print-title { display: block !important; }
+
+  :root, :root[data-theme='dark'] {
+    color-scheme: light;
+    --color-background: #fff; --color-surface: #fff; --color-surface-secondary: #fff;
+    --color-text-primary: #000; --color-text-secondary: #333; --color-heading: #000;
+    --color-border: #999; --color-accent: #8f0e24; --color-accent-text: #8f0e24;
+    --color-accent-soft: #fff; --color-mark-bg: transparent; --color-shadow: transparent;
+  }
+  .rule-callout, .rule-callout--safe { background: #fff !important; color: #000 !important; border: 1px solid #000 !important; }
+  .rule-callout--ping b { color: #000 !important; }
+  .rule-section__kanji, .rule-section__list li::before { background: #fff !important; color: #000 !important; border: 1px solid #000 !important; }
+  .rule-section__list li strong, .notice strong { color: #000 !important; }
+  .notice { background: #fff !important; border: 1px solid #000 !important; }
+  .footer { background: #fff !important; color: #000 !important; border-top: 1px solid #999; }
+}

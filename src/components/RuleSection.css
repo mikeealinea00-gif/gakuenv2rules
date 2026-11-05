@@ -1,0 +1,19 @@
+.rule-section { background: var(--color-surface); border: 1px solid var(--color-border); border-radius: 10px; padding: 26px 26px 12px; margin-bottom: 26px; }
+.rule-section--warn { border-left: 5px solid var(--color-accent); background-image: linear-gradient(90deg, var(--color-accent-soft), transparent 60%); }
+.rule-section__head { display: flex; gap: 14px; align-items: center; margin-bottom: 14px; }
+.rule-section__kanji { flex: none; width: 46px; height: 46px; border-radius: 50%; display: grid; place-items: center; background: var(--black); color: var(--gold); border: 2px solid var(--gold); font: 800 22px var(--font-head); }
+.rule-section__group { font-size: 14px; color: var(--color-accent-text); font-weight: 700; }
+.rule-section h2 { font-size: clamp(22px, 3vw, 28px); color: var(--color-heading); font-weight: 100;}
+.rule-section__list { list-style: none; margin: 0; padding: 0; counter-reset: rule; }
+.rule-section__list li { counter-increment: rule; display: grid; grid-template-columns: 34px 1fr; gap: 12px; padding: 14px 0; border-top: 1px solid var(--color-border); max-width: 78ch; }
+.rule-section__list li::before { content: counter(rule); width: 28px; height: 28px; margin-top: 2px; border-radius: 50%; display: grid; place-items: center; background: var(--black); color: var(--gold); font: 700 14px var(--font-body); }
+.rule-section__text { min-width: 0; }
+.rule-section__list li strong { color: var(--color-accent-text); }
+.rule-callout { display: flex; flex-direction: column; background: var(--color-callout-bg); color: #fff; border: 2px solid var(--gold); border-radius: var(--radius); padding: 14px 18px; margin-bottom: 14px; font-weight: 700; }
+.rule-callout small { font-weight: 400; color: #cfd8ef; margin-top: 2px; }
+.rule-callout--ping { flex-direction: row; align-items: center; gap: 16px; font-weight: 400; }
+.rule-callout--ping b { font: 800 clamp(30px, 6vw, 44px) var(--font-head); color: var(--gold); line-height: 1; white-space: nowrap; }
+.rule-callout--ping span { font-size: 15px; color: #dfe5f5; }
+.rule-callout--safe { background: var(--color-accent-soft); color: var(--color-text-primary); border-color: var(--color-accent); }
+.rule-callout--safe small { color: var(--color-text-secondary); }
+@media (max-width: 900px) { .rule-section { padding: 20px 16px 8px; } }

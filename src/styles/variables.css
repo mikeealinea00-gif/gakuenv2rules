@@ -1,0 +1,63 @@
+@import url("./fonts.css");
+/* Raw brand palette (theme-independent): black + hot pink, from the Gakuen V2 logo */
+:root {
+  --black: #0b0b0f;
+  --black-soft: #1a1a22;
+  --crimson: #d4006f;
+  --crimson-dark: #a80058;
+  --gold: #f06bb0; /* the soft-pink accent used for borders and highlights */
+  --font-body: 'Inter','Zen Kaku Gothic New', system-ui, 'Segoe UI', sans-serif;
+  --font-head: 'Bangers', 'Shippori Mincho B1', 'Hiragino Mincho ProN', Georgia, serif;
+  --space-1: 0.5rem;
+  --space-2: 1rem;
+  --space-3: 1.5rem;
+  --space-4: 2.5rem;
+  --space-5: 3.5rem;
+  --radius: 8px;
+  --nav-h: 64px;
+}
+
+/* Light theme (default): white page, ink text, pink accents */
+:root {
+  color-scheme: light;
+  --color-background: #ffffff;
+  --color-surface: #ffffff;
+  --color-surface-secondary: #fdf1f7;
+  --color-text-primary: #16213d;
+  --color-text-secondary: #56607a;
+  --color-heading: #16213d;
+  --color-border: #f0d3e3;
+  --color-accent: #d4006f;
+  --color-accent-hover: #a80058;
+  --color-accent-text: #d4006f;
+  --color-accent-soft: rgba(212, 0, 111, 0.08);
+  --color-focus: #d4006f;
+  --color-navigation: #0b0b0f;
+  --color-navigation-text: #ffffff;
+  --color-callout-bg: #0b0b0f;
+  --color-notice-bg: rgba(240, 107, 176, 0.12);
+  --color-mark-bg: rgba(240, 107, 176, 0.45);
+  --color-footer: #0b0b0f;
+  --color-shadow: rgba(212, 0, 111, 0.2);
+  --shadow: 0 10px 24px var(--color-shadow);
+}
+
+/* Dark theme: near-black page, charcoal cards, pink-tinted borders */
+:root[data-theme='dark'] {
+  color-scheme: dark;
+  --color-background: #121118;
+  --color-surface: #1b1a24;
+  --color-surface-secondary: #252330;
+  --color-text-primary: #f3f0f6;
+  --color-text-secondary: #b6b0c0;
+  --color-heading: #ffffff;
+  --color-border: #3a2b3a;
+  --color-accent: #d4006f;
+  --color-accent-hover: #ec1c88;
+  --color-accent-text: #ff6fb5;
+  --color-accent-soft: rgba(212, 0, 111, 0.18);
+  --color-focus: #f06bb0;
+  --color-notice-bg: rgba(240, 107, 176, 0.12);
+  --color-mark-bg: rgba(240, 107, 176, 0.4);
+  --color-shadow: rgba(0, 0, 0, 0.55);
+}

@@ -1,0 +1,2 @@
+.theme-toggle { display: grid; place-items: center; width: 46px; height: 46px; border-radius: 6px; border: 1.5px solid var(--gold); background: transparent; color: #fff; transition: background-color 0.2s, border-color 0.2s; }
+.theme-toggle:hover { background: rgba(240, 107, 176, 0.18); }

@@ -1,0 +1,8 @@
+.category-card { display: flex; gap: 14px; align-items: flex-start; background: var(--color-surface); border: 1px solid var(--color-border); border-left: 4px solid var(--color-accent); border-radius: var(--radius); padding: 18px; text-decoration: none; transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s, background-color 0.25s; }
+.category-card:hover { transform: translateY(-3px); box-shadow: var(--shadow); border-left-color: var(--gold); }
+.category-card__kanji { flex: none; width: 46px; height: 46px; border-radius: 50%; display: grid; place-items: center; background: var(--black); color: var(--gold); border: 2px solid var(--gold); font: 800 22px var(--font-head); }
+.category-card__body { display: flex; flex-direction: column; gap: 4px; }
+.category-card__title { display: flex; align-items: center; gap: 0.4rem; font: 100 22px var(--font-head); color: var(--color-heading); }
+.category-card__title svg { flex: none; color: var(--color-accent-text); }
+.category-card__desc { color: var(--color-text-secondary); font-size: 15px; line-height: 1.5; }
+.category-card__more { color: var(--color-accent-text); font-weight: 700; font-size: 14px; margin-top: 4px; }

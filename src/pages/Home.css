@@ -1,0 +1,8 @@
+.overview { border-bottom: 0; }
+.overview__grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 16px; }
+.result { background: var(--color-surface); border: 1px solid var(--color-border); border-left: 4px solid var(--gold); border-radius: var(--radius); padding: 14px 18px; margin-bottom: 12px; }
+.result small { display: block; color: var(--color-accent-text); font-weight: 700; font-size: 14px; }
+.result a { color: var(--color-accent-text); font-size: 14px; }
+.no-results { text-align: center; background: var(--color-surface); color: var(--color-text-secondary); border: 1px dashed var(--color-border); border-radius: 10px; padding: 36px 16px; display: grid; gap: 8px; justify-items: center; }
+.rules-all + .notice, .handbook__content > .notice { margin-top: 10px; }
+.print-title { font-family: var(--font-head); font-size: 1.4rem; }

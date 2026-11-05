@@ -1,0 +1,7 @@
+.footer-art { margin-top: 40px; background: linear-gradient(to bottom, var(--color-background) 38%, var(--black) 38%); }
+.footer-art > div { max-width: 1200px; margin: 0 auto; aspect-ratio: 900 / 116; background: url('../assets/images/footer-art.jpg') center / 100% 100% no-repeat; }
+:root[data-theme='dark'] .footer-art > div { background-image: url('../assets/images/footer-art-dark.webp'); }
+.footer { background: var(--color-footer); color: #cfd8ef; padding: 36px 0 40px; border-top: 3px solid var(--gold); }
+.footer__inner { display: grid; gap: 8px; }
+.footer strong { font: 100 30px var(--font-head); color: #fff; }
+.footer a { color: var(--gold); width: fit-content; }
