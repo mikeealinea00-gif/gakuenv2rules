@@ -72,6 +72,7 @@ export const rules = {
     'Wearing the designated uniform is mandatory during these events. You cannot remove your uniform until you go back to your dormitory.',
     'Players who are not wearing the required uniform must not be targeted or attacked.',
     'Trigger spamming is strictly prohibited. If no enemies are present, proceed with claiming the reward and leave the area immediately.',
+    'Directly stashing flag during flag capture on enemy dormitory garage is strictly prohibited.',
   ],
   //cement: ['Uniform is not mandatory.'],
   sectionwar: [
